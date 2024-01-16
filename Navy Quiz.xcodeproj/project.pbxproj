@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8BD0FFC2B57457400CAFC27 /* Navy_QuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFB2B57457400CAFC27 /* Navy_QuizApp.swift */; };
+		C8BD0FFE2B57457400CAFC27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFD2B57457400CAFC27 /* ContentView.swift */; };
+		C8BD10002B57457400CAFC27 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFF2B57457400CAFC27 /* Item.swift */; };
+		C8BD10022B57457500CAFC27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BD10012B57457500CAFC27 /* Assets.xcassets */; };
+		C8BD10062B57457500CAFC27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BD10052B57457500CAFC27 /* Preview Assets.xcassets */; };
+		C8BD10112B57457500CAFC27 /* Navy_QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD10102B57457500CAFC27 /* Navy_QuizTests.swift */; };
+		C8BD101B2B57457500CAFC27 /* Navy_QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD101A2B57457500CAFC27 /* Navy_QuizUITests.swift */; };
+		C8BD101D2B57457500CAFC27 /* Navy_QuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD101C2B57457500CAFC27 /* Navy_QuizUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8BD100D2B57457500CAFC27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8BD0FF02B57457400CAFC27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8BD0FF72B57457400CAFC27;
+			remoteInfo = "Navy Quiz";
+		};
+		C8BD10172B57457500CAFC27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8BD0FF02B57457400CAFC27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8BD0FF72B57457400CAFC27;
+			remoteInfo = "Navy Quiz";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C8BD0FF82B57457400CAFC27 /* Navy Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navy Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8BD0FFB2B57457400CAFC27 /* Navy_QuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navy_QuizApp.swift; sourceTree = "<group>"; };
+		C8BD0FFD2B57457400CAFC27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C8BD0FFF2B57457400CAFC27 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C8BD10012B57457500CAFC27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8BD10032B57457500CAFC27 /* Navy_Quiz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Navy_Quiz.entitlements; sourceTree = "<group>"; };
+		C8BD10052B57457500CAFC27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8BD10072B57457500CAFC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8BD100C2B57457500CAFC27 /* Navy QuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Navy QuizTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8BD10102B57457500CAFC27 /* Navy_QuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navy_QuizTests.swift; sourceTree = "<group>"; };
+		C8BD10162B57457500CAFC27 /* Navy QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Navy QuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8BD101A2B57457500CAFC27 /* Navy_QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navy_QuizUITests.swift; sourceTree = "<group>"; };
+		C8BD101C2B57457500CAFC27 /* Navy_QuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navy_QuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8BD0FF52B57457400CAFC27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8BD10092B57457500CAFC27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8BD10132B57457500CAFC27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8BD0FEF2B57457400CAFC27 = {
+			isa = PBXGroup;
+			children = (
+				C8BD0FFA2B57457400CAFC27 /* Navy Quiz */,
+				C8BD100F2B57457500CAFC27 /* Navy QuizTests */,
+				C8BD10192B57457500CAFC27 /* Navy QuizUITests */,
+				C8BD0FF92B57457400CAFC27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8BD0FF92B57457400CAFC27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8BD0FF82B57457400CAFC27 /* Navy Quiz.app */,
+				C8BD100C2B57457500CAFC27 /* Navy QuizTests.xctest */,
+				C8BD10162B57457500CAFC27 /* Navy QuizUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8BD0FFA2B57457400CAFC27 /* Navy Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				C8BD0FFB2B57457400CAFC27 /* Navy_QuizApp.swift */,
+				C8BD0FFD2B57457400CAFC27 /* ContentView.swift */,
+				C8BD0FFF2B57457400CAFC27 /* Item.swift */,
+				C8BD10012B57457500CAFC27 /* Assets.xcassets */,
+				C8BD10032B57457500CAFC27 /* Navy_Quiz.entitlements */,
+				C8BD10072B57457500CAFC27 /* Info.plist */,
+				C8BD10042B57457500CAFC27 /* Preview Content */,
+			);
+			path = "Navy Quiz";
+			sourceTree = "<group>";
+		};
+		C8BD10042B57457500CAFC27 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C8BD10052B57457500CAFC27 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8BD100F2B57457500CAFC27 /* Navy QuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8BD10102B57457500CAFC27 /* Navy_QuizTests.swift */,
+			);
+			path = "Navy QuizTests";
+			sourceTree = "<group>";
+		};
+		C8BD10192B57457500CAFC27 /* Navy QuizUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8BD101A2B57457500CAFC27 /* Navy_QuizUITests.swift */,
+				C8BD101C2B57457500CAFC27 /* Navy_QuizUITestsLaunchTests.swift */,
+			);
+			path = "Navy QuizUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8BD0FF72B57457400CAFC27 /* Navy Quiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8BD10202B57457500CAFC27 /* Build configuration list for PBXNativeTarget "Navy Quiz" */;
+			buildPhases = (
+				C8BD0FF42B57457400CAFC27 /* Sources */,
+				C8BD0FF52B57457400CAFC27 /* Frameworks */,
+				C8BD0FF62B57457400CAFC27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Navy Quiz";
+			productName = "Navy Quiz";
+			productReference = C8BD0FF82B57457400CAFC27 /* Navy Quiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8BD100B2B57457500CAFC27 /* Navy QuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8BD10232B57457500CAFC27 /* Build configuration list for PBXNativeTarget "Navy QuizTests" */;
+			buildPhases = (
+				C8BD10082B57457500CAFC27 /* Sources */,
+				C8BD10092B57457500CAFC27 /* Frameworks */,
+				C8BD100A2B57457500CAFC27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8BD100E2B57457500CAFC27 /* PBXTargetDependency */,
+			);
+			name = "Navy QuizTests";
+			productName = "Navy QuizTests";
+			productReference = C8BD100C2B57457500CAFC27 /* Navy QuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8BD10152B57457500CAFC27 /* Navy QuizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8BD10262B57457500CAFC27 /* Build configuration list for PBXNativeTarget "Navy QuizUITests" */;
+			buildPhases = (
+				C8BD10122B57457500CAFC27 /* Sources */,
+				C8BD10132B57457500CAFC27 /* Frameworks */,
+				C8BD10142B57457500CAFC27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8BD10182B57457500CAFC27 /* PBXTargetDependency */,
+			);
+			name = "Navy QuizUITests";
+			productName = "Navy QuizUITests";
+			productReference = C8BD10162B57457500CAFC27 /* Navy QuizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8BD0FF02B57457400CAFC27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					C8BD0FF72B57457400CAFC27 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					C8BD100B2B57457500CAFC27 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C8BD0FF72B57457400CAFC27;
+					};
+					C8BD10152B57457500CAFC27 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = C8BD0FF72B57457400CAFC27;
+					};
+				};
+			};
+			buildConfigurationList = C8BD0FF32B57457400CAFC27 /* Build configuration list for PBXProject "Navy Quiz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8BD0FEF2B57457400CAFC27;
+			productRefGroup = C8BD0FF92B57457400CAFC27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8BD0FF72B57457400CAFC27 /* Navy Quiz */,
+				C8BD100B2B57457500CAFC27 /* Navy QuizTests */,
+				C8BD10152B57457500CAFC27 /* Navy QuizUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8BD0FF62B57457400CAFC27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8BD10062B57457500CAFC27 /* Preview Assets.xcassets in Resources */,
+				C8BD10022B57457500CAFC27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8BD100A2B57457500CAFC27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8BD10142B57457500CAFC27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8BD0FF42B57457400CAFC27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8BD0FFE2B57457400CAFC27 /* ContentView.swift in Sources */,
+				C8BD10002B57457400CAFC27 /* Item.swift in Sources */,
+				C8BD0FFC2B57457400CAFC27 /* Navy_QuizApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8BD10082B57457500CAFC27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8BD10112B57457500CAFC27 /* Navy_QuizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8BD10122B57457500CAFC27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8BD101B2B57457500CAFC27 /* Navy_QuizUITests.swift in Sources */,
+				C8BD101D2B57457500CAFC27 /* Navy_QuizUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8BD100E2B57457500CAFC27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8BD0FF72B57457400CAFC27 /* Navy Quiz */;
+			targetProxy = C8BD100D2B57457500CAFC27 /* PBXContainerItemProxy */;
+		};
+		C8BD10182B57457500CAFC27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8BD0FF72B57457400CAFC27 /* Navy Quiz */;
+			targetProxy = C8BD10172B57457500CAFC27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C8BD101E2B57457500CAFC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8BD101F2B57457500CAFC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C8BD10212B57457500CAFC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Navy Quiz/Navy_Quiz.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Navy Quiz/Preview Content\"";
+				DEVELOPMENT_TEAM = R3S8P8V5KU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Navy Quiz/Info.plist";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mswebmaker.Navy-Quiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8BD10222B57457500CAFC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Navy Quiz/Navy_Quiz.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Navy Quiz/Preview Content\"";
+				DEVELOPMENT_TEAM = R3S8P8V5KU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Navy Quiz/Info.plist";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mswebmaker.Navy-Quiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C8BD10242B57457500CAFC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R3S8P8V5KU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mswebmaker.Navy-QuizTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Navy Quiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Navy Quiz";
+			};
+			name = Debug;
+		};
+		C8BD10252B57457500CAFC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R3S8P8V5KU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mswebmaker.Navy-QuizTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Navy Quiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Navy Quiz";
+			};
+			name = Release;
+		};
+		C8BD10272B57457500CAFC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R3S8P8V5KU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mswebmaker.Navy-QuizUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Navy Quiz";
+			};
+			name = Debug;
+		};
+		C8BD10282B57457500CAFC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R3S8P8V5KU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mswebmaker.Navy-QuizUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Navy Quiz";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8BD0FF32B57457400CAFC27 /* Build configuration list for PBXProject "Navy Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8BD101E2B57457500CAFC27 /* Debug */,
+				C8BD101F2B57457500CAFC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8BD10202B57457500CAFC27 /* Build configuration list for PBXNativeTarget "Navy Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8BD10212B57457500CAFC27 /* Debug */,
+				C8BD10222B57457500CAFC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8BD10232B57457500CAFC27 /* Build configuration list for PBXNativeTarget "Navy QuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8BD10242B57457500CAFC27 /* Debug */,
+				C8BD10252B57457500CAFC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8BD10262B57457500CAFC27 /* Build configuration list for PBXNativeTarget "Navy QuizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8BD10272B57457500CAFC27 /* Debug */,
+				C8BD10282B57457500CAFC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8BD0FF02B57457400CAFC27 /* Project object */;
+}
