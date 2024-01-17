@@ -10,9 +10,9 @@ class QuizViewModel: ObservableObject {
     @Published var score: Int = 0
     @Published var quizCompleted = false
     
-    init(questions: [QuestionItem] = quizQuestions) { // Default to quizQuestions
+    init(questions: [QuestionItem]) {
             self.questions = questions
-    }
+        }
     
     var currentQuestion: QuestionItem {
         questions[currentQuestionIndex]

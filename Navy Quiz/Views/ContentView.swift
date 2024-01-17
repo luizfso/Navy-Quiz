@@ -7,35 +7,56 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Spacer() // Pushes everything down
-                
+                Spacer() // Pushes everything to the middle
+
                 Text("Navy Quiz")
                     .font(.largeTitle)
-                    .foregroundColor(.blue)
-                    .padding(.top, 150)
+                    .foregroundColor(.accentColor)
+                    .padding()
 
-                Text("Test your knowledge")
+                Text("Select your rank to start the quiz")
                     .font(.title2)
-                    .foregroundColor(.blue)
-                    .padding(.bottom, 50)
+                    .foregroundColor(.accentColor)
+                    .padding(.bottom, 20)
 
-                Spacer() // Takes up the remaining space
+                // Buttons for different rank quizzes
+                VStack(spacing: 10) {
+                    NavigationLink(destination: QuizView(quizType: .e4)) {
+                        QuizButton(title: "The PMK-EE-E4 Quiz")
+                    }
 
-                NavigationLink(destination: QuizView()) {
-                    Text("Start Quiz")
-                        .bold()
-                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                        .padding(.horizontal)
+                    NavigationLink(destination: QuizView(quizType: .e5)) {
+                        QuizButton(title: "The PMK-EE-E5 Quiz")
+                    }
+
+                    NavigationLink(destination: QuizView(quizType: .e6)) {
+                        QuizButton(title: "The PMK-EE-E6 Quiz")
+                    }
+
+                    NavigationLink(destination: QuizView(quizType: .e7)) {
+                        QuizButton(title: "The PMK-EE-E7 Quiz")
+                    }
                 }
-                .padding(.bottom, 50) // Adds padding at the bottom
-                
-                Spacer() // Optional, adjusts bottom spacing
+
+                Spacer() // Pushes everything to the middle
             }
             .navigationBarHidden(true)
         }
+    }
+}
+
+// A custom view for a quiz button
+struct QuizButton: View {
+    var title: String
+
+    var body: some View {
+        Text(title)
+            .bold()
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
+            .background(Color.accentColor)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+            .padding(.horizontal)
     }
 }
 
