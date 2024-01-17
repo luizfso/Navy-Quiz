@@ -6,7 +6,7 @@ import SwiftUI
 struct QuizView: View {
     let quizType: QuizType
     @StateObject var viewModel: QuizViewModel
-
+    
     init(quizType: QuizType) {
         self.quizType = quizType
         switch quizType {
@@ -22,10 +22,12 @@ struct QuizView: View {
     }
 
     var body: some View {
-        // Your existing QuizView code here
-        // This is where you'll display the questions and handle user interaction.
-        // The details depend on your original implementation.
-        Text("Quiz for \(quizType)")
+        // Here, you should display the questions from viewModel.questions
+        // For example:
+        List(viewModel.questions) { question in
+            Text(question.questionText)
+            // Display options...
+        }
     }
 }
 
@@ -46,3 +48,4 @@ struct QuizView_Previews: PreviewProvider {
         QuizView(quizType: .e4) // For preview purposes
     }
 }
+
