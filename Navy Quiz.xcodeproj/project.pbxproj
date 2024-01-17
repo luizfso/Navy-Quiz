@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		C8BD0FFC2B57457400CAFC27 /* Navy_QuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFB2B57457400CAFC27 /* Navy_QuizApp.swift */; };
 		C8BD0FFE2B57457400CAFC27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFD2B57457400CAFC27 /* ContentView.swift */; };
-		C8BD10002B57457400CAFC27 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFF2B57457400CAFC27 /* Item.swift */; };
+		C8BD10002B57457400CAFC27 /* QuestionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFF2B57457400CAFC27 /* QuestionItem.swift */; };
 		C8BD10022B57457500CAFC27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BD10012B57457500CAFC27 /* Assets.xcassets */; };
 		C8BD10062B57457500CAFC27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BD10052B57457500CAFC27 /* Preview Assets.xcassets */; };
 		C8BD10112B57457500CAFC27 /* Navy_QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD10102B57457500CAFC27 /* Navy_QuizTests.swift */; };
 		C8BD101B2B57457500CAFC27 /* Navy_QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD101A2B57457500CAFC27 /* Navy_QuizUITests.swift */; };
 		C8BD101D2B57457500CAFC27 /* Navy_QuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD101C2B57457500CAFC27 /* Navy_QuizUITestsLaunchTests.swift */; };
+		C8BD102A2B574F8C00CAFC27 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD10292B574F8C00CAFC27 /* QuizView.swift */; };
+		C8BD102C2B574FE600CAFC27 /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD102B2B574FE600CAFC27 /* QuizViewModel.swift */; };
+		C8BD10312B5754BE00CAFC27 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD10302B5754BE00CAFC27 /* ScoreView.swift */; };
+		C8BD10332B5756B400CAFC27 /* QuizQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD10322B5756B400CAFC27 /* QuizQuestions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,7 @@
 		C8BD0FF82B57457400CAFC27 /* Navy Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navy Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BD0FFB2B57457400CAFC27 /* Navy_QuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navy_QuizApp.swift; sourceTree = "<group>"; };
 		C8BD0FFD2B57457400CAFC27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C8BD0FFF2B57457400CAFC27 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C8BD0FFF2B57457400CAFC27 /* QuestionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionItem.swift; sourceTree = "<group>"; };
 		C8BD10012B57457500CAFC27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8BD10032B57457500CAFC27 /* Navy_Quiz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Navy_Quiz.entitlements; sourceTree = "<group>"; };
 		C8BD10052B57457500CAFC27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,6 +52,10 @@
 		C8BD10162B57457500CAFC27 /* Navy QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Navy QuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BD101A2B57457500CAFC27 /* Navy_QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navy_QuizUITests.swift; sourceTree = "<group>"; };
 		C8BD101C2B57457500CAFC27 /* Navy_QuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navy_QuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8BD10292B574F8C00CAFC27 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		C8BD102B2B574FE600CAFC27 /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
+		C8BD10302B5754BE00CAFC27 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		C8BD10322B5756B400CAFC27 /* QuizQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				C8BD0FFB2B57457400CAFC27 /* Navy_QuizApp.swift */,
-				C8BD0FFD2B57457400CAFC27 /* ContentView.swift */,
-				C8BD0FFF2B57457400CAFC27 /* Item.swift */,
+				C8BD102D2B57506200CAFC27 /* Models */,
+				C8BD102E2B57507E00CAFC27 /* Views */,
+				C8BD102F2B57509400CAFC27 /* ViewModels */,
 				C8BD10012B57457500CAFC27 /* Assets.xcassets */,
 				C8BD10032B57457500CAFC27 /* Navy_Quiz.entitlements */,
 				C8BD10072B57457500CAFC27 /* Info.plist */,
@@ -132,6 +141,33 @@
 				C8BD101C2B57457500CAFC27 /* Navy_QuizUITestsLaunchTests.swift */,
 			);
 			path = "Navy QuizUITests";
+			sourceTree = "<group>";
+		};
+		C8BD102D2B57506200CAFC27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8BD0FFF2B57457400CAFC27 /* QuestionItem.swift */,
+				C8BD10322B5756B400CAFC27 /* QuizQuestions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C8BD102E2B57507E00CAFC27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8BD0FFD2B57457400CAFC27 /* ContentView.swift */,
+				C8BD10292B574F8C00CAFC27 /* QuizView.swift */,
+				C8BD10302B5754BE00CAFC27 /* ScoreView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8BD102F2B57509400CAFC27 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C8BD102B2B574FE600CAFC27 /* QuizViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8BD0FFE2B57457400CAFC27 /* ContentView.swift in Sources */,
-				C8BD10002B57457400CAFC27 /* Item.swift in Sources */,
+				C8BD102A2B574F8C00CAFC27 /* QuizView.swift in Sources */,
+				C8BD10332B5756B400CAFC27 /* QuizQuestions.swift in Sources */,
+				C8BD10002B57457400CAFC27 /* QuestionItem.swift in Sources */,
+				C8BD102C2B574FE600CAFC27 /* QuizViewModel.swift in Sources */,
 				C8BD0FFC2B57457400CAFC27 /* Navy_QuizApp.swift in Sources */,
+				C8BD10312B5754BE00CAFC27 /* ScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
