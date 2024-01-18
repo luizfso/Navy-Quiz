@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8B405DE2B590764009AEE1F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B405DD2B590764009AEE1F /* InfoView.swift */; };
 		C8BD0FFC2B57457400CAFC27 /* Navy_QuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFB2B57457400CAFC27 /* Navy_QuizApp.swift */; };
 		C8BD0FFE2B57457400CAFC27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFD2B57457400CAFC27 /* ContentView.swift */; };
 		C8BD10002B57457400CAFC27 /* QuestionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFF2B57457400CAFC27 /* QuestionItem.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8B405DD2B590764009AEE1F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		C8BD0FF82B57457400CAFC27 /* Navy Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navy Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BD0FFB2B57457400CAFC27 /* Navy_QuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navy_QuizApp.swift; sourceTree = "<group>"; };
 		C8BD0FFD2B57457400CAFC27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				C8BD0FFD2B57457400CAFC27 /* ContentView.swift */,
 				C8BD10292B574F8C00CAFC27 /* QuizView.swift */,
 				C8BD10302B5754BE00CAFC27 /* ScoreView.swift */,
+				C8B405DD2B590764009AEE1F /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B405DE2B590764009AEE1F /* InfoView.swift in Sources */,
 				C8BD0FFE2B57457400CAFC27 /* ContentView.swift in Sources */,
 				C8BD102A2B574F8C00CAFC27 /* QuizView.swift in Sources */,
 				C8BD10332B5756B400CAFC27 /* QuizQuestions.swift in Sources */,

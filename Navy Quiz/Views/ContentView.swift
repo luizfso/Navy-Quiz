@@ -5,6 +5,16 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 10) {
+                HStack {
+                    Spacer()  // Pushes the button to the right
+
+                    NavigationLink(destination: InfoView()) {
+                        Image(systemName: "info.circle")  // System info icon
+                            .font(.title2)
+                            .foregroundColor(.blue)
+                    }
+                    .padding([.top, .trailing])  // Padding to ensure it's easily tappable
+                }
 
                 Image("NavyQuizLogo")
                     .resizable()
