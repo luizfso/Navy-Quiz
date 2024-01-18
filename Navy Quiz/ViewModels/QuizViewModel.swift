@@ -6,6 +6,7 @@ class QuizViewModel: ObservableObject {
     @Published var currentQuestionIndex = 0
     @Published var score: Int = 0
     @Published var quizCompleted = false
+    @Published var selectedAnswer: String?
 
     init(questions: [String: [QuestionItem]]) {
         self.questions = questions
@@ -20,7 +21,16 @@ class QuizViewModel: ObservableObject {
         currentQuestions[currentQuestionIndex % currentQuestions.count]
     }
 
+    func selectAnswer(_ answer: String) {
+        selectedAnswer = answer
+    }
+
     func goToNextQuestion() {
+        if let selectedAnswer = selectedAnswer, currentQuestion.correctAnswer == selectedAnswer {
+            score += 1
+        }
+        self.selectedAnswer = nil  // Reset selected answer for next question
+
         if currentQuestionIndex < currentQuestions.count - 1 {
             currentQuestionIndex += 1
         } else {
@@ -46,12 +56,6 @@ class QuizViewModel: ObservableObject {
         currentQuestionIndex = 0
         score = 0
         quizCompleted = false
-    }
-
-    func selectAnswer(_ answer: String) {
-        if currentQuestion.correctAnswer == answer {
-            score += 1
-        }
-        goToNextQuestion()
+        selectedAnswer = nil
     }
 }
