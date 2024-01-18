@@ -7,12 +7,12 @@ struct ContentView: View {
                 Spacer()
 
                 // Logo Image
-                Image("NavyQuizLogo") // Use the name you gave the image in the asset catalog
-                    .resizable() // Make the image resizable
-                    .scaledToFit() // Maintain the aspect ratio
-                    .frame(width: 250, height: 250) // Adjust the size as needed
-                    .padding(.bottom, 5)
-                
+                Image("NavyQuizLogo") // Ensure this image is in your Assets
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100, height: 100)
+                    .padding(.bottom, 20)
+
                 Text("Navy Quiz")
                     .font(.largeTitle)
                     .foregroundColor(.accentColor)
@@ -23,6 +23,7 @@ struct ContentView: View {
                     .foregroundColor(.accentColor)
                     .padding(.bottom, 5)
 
+                // Buttons for different rank quizzes
                 Group {
                     NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e4Questions))) {
                         QuizButton(title: "The PMK-EE-E4 Quiz")

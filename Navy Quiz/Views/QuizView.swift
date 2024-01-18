@@ -6,6 +6,10 @@ struct QuizView: View {
     var body: some View {
         VStack {
             if !viewModel.quizCompleted {
+                Text(viewModel.currentSubject)
+                    .font(.headline)
+                    .padding()
+
                 Text(viewModel.currentQuestion.questionText)
                     .padding()
 
@@ -13,24 +17,28 @@ struct QuizView: View {
                     Button(action: {
                         viewModel.selectAnswer(option)
                     }) {
-                        HStack {
-                            Text(option)
-                                .foregroundColor(viewModel.selectedAnswer == option ? .white : .black)
-                                .padding()
-                            Spacer()
-                        }
-                        .background(viewModel.selectedAnswer == option ? Color.blue : Color.gray)
-                        .cornerRadius(10)
+                        Text(option)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.blue)
+                            .foregroundColor(Color.white)
+                            .cornerRadius(10)
                     }
                     .padding(.horizontal)
                 }
 
-                Button("Next", action: viewModel.goToNextQuestion)
-                    .disabled(viewModel.selectedAnswer == nil)
-                    .padding()
+                Spacer()
             } else {
                 Text("Quiz Complete! Your score: \(viewModel.score)")
-                Button("Restart Quiz", action: viewModel.resetQuiz)
+                    .padding()
+
+                Button("Restart Quiz") {
+                    viewModel.resetQuiz()
+                }
+                .padding()
+                .background(Color.green)
+                .foregroundColor(Color.white)
+                .cornerRadius(10)
             }
         }
         .padding()
