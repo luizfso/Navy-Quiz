@@ -1,3 +1,6 @@
+// ScoreView.swift
+// Views
+
 import SwiftUI
 
 struct ScoreView: View {

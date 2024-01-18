@@ -1,3 +1,6 @@
+// QuizView.swift
+// Views
+
 import SwiftUI
 
 struct QuizView: View {
@@ -5,7 +8,7 @@ struct QuizView: View {
     @Environment(\.presentationMode) var presentationMode
     
     let testTitle: String  // Add a property for the test title
-    let navyBlueColor = Color.blue.opacity(0.8)  // Soft navy blue color
+    let navyBlueColor = Color("NavyBlue")  // Soft navy blue color from color schema
 
     var body: some View {
         VStack {
@@ -15,7 +18,7 @@ struct QuizView: View {
                     Button("Give Up") {
                         presentationMode.wrappedValue.dismiss()
                     }
-                    .foregroundColor(.red)
+                    .foregroundColor(Color("AccentColor"))  // Updated to use AccentColor
                     .padding()
                     .bold()
 
@@ -35,12 +38,15 @@ struct QuizView: View {
                     .font(.system(size: 24))
                     .fontWeight(.bold)
                     .padding(.bottom, 40)
+                    .foregroundColor(Color("TextPrimary"))  // Updated to use TextPrimary color
 
                 Text("Question:")
                     .font(.headline)
+                    .foregroundColor(Color("TextSecondary"))  // Updated to use TextSecondary color
                     .padding(.bottom, 2)
                 Text(viewModel.currentQuestion.questionText)
                     .padding(.bottom, 20)
+                    .foregroundColor(Color("TextPrimary"))  // Updated to use TextPrimary color
 
                 ForEach(viewModel.currentQuestion.options, id: \.self) { option in
                     Button(action: {
@@ -70,7 +76,7 @@ struct QuizView: View {
                     Text("Next")
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(viewModel.selectedAnswer != nil ? Color.green : Color.gray)
+                        .background(viewModel.selectedAnswer != nil ? Color("AccentColor") : Color.gray)  // Updated to use AccentColor
                         .foregroundColor(Color.white)
                         .cornerRadius(10)
                 }
@@ -94,6 +100,7 @@ struct QuizView: View {
                 }
             }
         .padding()
+        .background(Color("BackgroundPrimary"))  // Updated to use BackgroundPrimary color
         .navigationBarBackButtonHidden(true)
     }
 }

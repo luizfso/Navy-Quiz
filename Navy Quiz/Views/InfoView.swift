@@ -1,3 +1,6 @@
+// InfoView.swift
+// Views
+
 import SwiftUI
 
 struct InfoView: View {
@@ -17,8 +20,24 @@ struct InfoView: View {
 
                 Text("It's important to consult the official study materials and resources for the most accurate and up-to-date information. For more details, please visit the official website:")
                     .padding(.bottom, 5)
+                
+                Spacer()
 
-                Link("Official Study Materials", destination: URL(string: "https://www.officialnavylink.com")!)
+                Text("Official Study Materials")
+                    .font(.subheadline)
+                    .bold()
+                    .padding(.bottom, 5)
+                
+                Link("PMK-EE Study Guide", destination: URL(string: "https://www.navyadvancement.com/navy-advancement/professional-military-knowledge.php")!)
+                    .foregroundColor(.blue)
+
+                Link("Navy e-Learning for PMK-EE", destination: URL(string: "https://learning.nel.navy.mil/")!)
+                    .foregroundColor(.blue)
+
+                Link("MyNavy Portal for PMK-EE", destination: URL(string: "https://www.mnp.navy.mil/")!)
+                    .foregroundColor(.blue)
+
+                Link("PMK-EE App Download", destination: URL(string: "https://www.applocker.navy.mil/")!)
                     .foregroundColor(.blue)
 
                 Spacer()

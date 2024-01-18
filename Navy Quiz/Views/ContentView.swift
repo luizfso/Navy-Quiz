@@ -1,3 +1,6 @@
+// ContentView.swift
+// Views
+
 import SwiftUI
 
 struct ContentView: View {
@@ -9,12 +12,12 @@ struct ContentView: View {
                     Spacer()  // Pushes the button to the right
 
                     NavigationLink(destination: InfoView()) {
-                        Image(systemName: "info.circle")  // System info icon
-                            .font(.title2)
-                            .foregroundColor(.blue)
+                            Image(systemName: "info.circle")  // System info icon
+                                .font(.title2)
+                                .foregroundColor(Color("AccentColor"))  // Updated to use custom accent color
+                        }
+                        .padding([.top, .trailing])  // Padding to ensure it's easily tappable
                     }
-                    .padding([.top, .trailing])  // Padding to ensure it's easily tappable
-                }
 
                 Image("NavyQuizLogo")
                     .resizable()
@@ -24,12 +27,12 @@ struct ContentView: View {
 
                 Text("Navy Quiz")
                     .font(.largeTitle)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(Color("TextPrimary"))  // Updated to use TextPrimary color
                     .padding()
 
                 Text("Select your rank to start the quiz")
                     .font(.title2)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(Color("TextSecondary"))  // Updated to use TextSecondary color
                     .padding()
 
                 Group {
@@ -52,6 +55,7 @@ struct ContentView: View {
 
                 Spacer()
             }
+            .background(Color("BackgroundPrimary"))  // Updated to use BackgroundPrimary color
             .navigationBarHidden(true)
         }
     }
@@ -64,8 +68,8 @@ struct QuizButton: View {
         Text(title)
             .bold()
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
-            .background(Color.accentColor)
-            .foregroundColor(.white)
+            .background(Color("AccentColor"))  // Updated to use AccentColor
+            .foregroundColor(Color.white)
             .cornerRadius(10)
             .padding(.horizontal)
     }
