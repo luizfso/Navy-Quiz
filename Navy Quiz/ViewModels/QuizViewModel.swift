@@ -1,6 +1,3 @@
-// QuizViewModel.swift
-// ViewModels
-
 import Foundation
 
 class QuizViewModel: ObservableObject {
@@ -9,33 +6,29 @@ class QuizViewModel: ObservableObject {
     @Published var selectedAnswer: String?
     @Published var score: Int = 0
     @Published var quizCompleted = false
-    
+
     init(questions: [QuestionItem]) {
-            self.questions = questions
-        }
-    
+        self.questions = questions
+    }
+
     var currentQuestion: QuestionItem {
         questions[currentQuestionIndex]
     }
-    
+
     func selectAnswer(_ answer: String) {
         selectedAnswer = answer
-        if answer == currentQuestion.correctAnswer {
+        if currentQuestion.correctAnswer == answer {
             score += 1
         }
     }
-    
+
     func goToNextQuestion() {
         if currentQuestionIndex < questions.count - 1 {
             currentQuestionIndex += 1
             selectedAnswer = nil
         } else {
-            finishQuiz()
+            quizCompleted = true
         }
-    }
-    
-    private func finishQuiz() {
-        quizCompleted = true
     }
 
     func resetQuiz() {

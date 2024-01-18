@@ -1,14 +1,18 @@
-// ContentView.swift
-// Views
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            VStack {
-                Spacer() // Pushes everything to the middle
+            VStack(spacing: 20) {
+                Spacer()
 
+                // Logo Image
+                Image("NavyQuizLogo") // Use the name you gave the image in the asset catalog
+                    .resizable() // Make the image resizable
+                    .scaledToFit() // Maintain the aspect ratio
+                    .frame(width: 250, height: 250) // Adjust the size as needed
+                    .padding(.bottom, 5)
+                
                 Text("Navy Quiz")
                     .font(.largeTitle)
                     .foregroundColor(.accentColor)
@@ -17,35 +21,33 @@ struct ContentView: View {
                 Text("Select your rank to start the quiz")
                     .font(.title2)
                     .foregroundColor(.accentColor)
-                    .padding(.bottom, 20)
+                    .padding(.bottom, 5)
 
-                // Buttons for different rank quizzes
-                VStack(spacing: 10) {
-                    NavigationLink(destination: QuizView(quizType: .e4)) {
+                Group {
+                    NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e4Questions))) {
                         QuizButton(title: "The PMK-EE-E4 Quiz")
                     }
 
-                    NavigationLink(destination: QuizView(quizType: .e5)) {
+                    NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e5Questions))) {
                         QuizButton(title: "The PMK-EE-E5 Quiz")
                     }
 
-                    NavigationLink(destination: QuizView(quizType: .e6)) {
+                    NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e6Questions))) {
                         QuizButton(title: "The PMK-EE-E6 Quiz")
                     }
 
-                    NavigationLink(destination: QuizView(quizType: .e7)) {
+                    NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e7Questions))) {
                         QuizButton(title: "The PMK-EE-E7 Quiz")
                     }
                 }
 
-                Spacer() // Pushes everything to the middle
+                Spacer()
             }
             .navigationBarHidden(true)
         }
     }
 }
 
-// A custom view for a quiz button
 struct QuizButton: View {
     var title: String
 
