@@ -4,6 +4,7 @@ struct QuizView: View {
     @StateObject var viewModel: QuizViewModel
     @Environment(\.presentationMode) var presentationMode
     
+    let testTitle: String  // Add a property for the test title
     let navyBlueColor = Color.blue.opacity(0.8)  // Soft navy blue color
 
     var body: some View {
@@ -16,6 +17,14 @@ struct QuizView: View {
                     }
                     .foregroundColor(.red)
                     .padding()
+                    .bold()
+
+                    Spacer()
+                    
+                    Text(testTitle)
+                        .bold()
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .padding()
 
                     Spacer()
                 }
@@ -91,6 +100,6 @@ struct QuizView: View {
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizView(viewModel: QuizViewModel(questions: QuizData.e4Questions))
+        QuizView(viewModel: QuizViewModel(questions: QuizData.e4Questions), testTitle: "PMK-EE-E4")
     }
 }

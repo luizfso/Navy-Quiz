@@ -23,19 +23,19 @@ struct ContentView: View {
                     .padding()
 
                 Group {
-                    NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e4Questions))) {
+                    NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e4Questions), testTitle: "PMK-EE-E4")) {
                         QuizButton(title: "The PMK-EE-E4 Quiz")
                     }
 
-                    NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e5Questions))) {
+                    NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e5Questions), testTitle: "PMK-EE-E5")) {
                         QuizButton(title: "The PMK-EE-E5 Quiz")
                     }
 
-                    NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e6Questions))) {
+                    NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e6Questions), testTitle: "PMK-EE-E6")) {
                         QuizButton(title: "The PMK-EE-E6 Quiz")
                     }
 
-                    NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e7Questions))) {
+                    NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e7Questions), testTitle: "PMK-EE-E7")) {
                         QuizButton(title: "The PMK-EE-E7 Quiz")
                     }
                 }
