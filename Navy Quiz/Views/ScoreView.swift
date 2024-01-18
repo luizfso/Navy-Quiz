@@ -14,16 +14,18 @@ struct ScoreView: View {
             Text("Quiz Complete!")
                 .font(.title)
                 .bold()
+                .foregroundColor(Color("TextPrimary"))  // Updated to use TextPrimary color
 
             Text("Your Score: \(score)/\(totalQuestions)")
                 .font(.title2)
+                .foregroundColor(Color("TextSecondary"))  // Updated to use TextSecondary color
 
             Button(action: restartAction) {
                 Text("Restart Quiz")
                     .bold()
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
-                    .background(Color.blue)
-                    .foregroundColor(.white)
+                    .background(Color("AccentColor"))  // Updated to use AccentColor
+                    .foregroundColor(Color.white)
                     .cornerRadius(10)
                     .padding(.horizontal)
             }
@@ -32,12 +34,13 @@ struct ScoreView: View {
                 Text("Back to Main Menu")
                     .bold()
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
-                    .background(Color.green)
-                    .foregroundColor(.white)
+                    .background(Color("AccentColor"))  // Updated to use AccentColor
+                    .foregroundColor(Color.white)
                     .cornerRadius(10)
                     .padding(.horizontal)
             }
         }
+        .background(Color("BackgroundPrimary"))  // Updated to use BackgroundPrimary color
     }
 }
 
