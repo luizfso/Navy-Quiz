@@ -8,19 +8,18 @@ struct QuizView: View {
 
     var body: some View {
         VStack {
-            // 'Give Up' button at the top
-            HStack {
-                Button("Give Up") {
-                    presentationMode.wrappedValue.dismiss()
-                }
-                .foregroundColor(.red)
-                .padding()
-
-                Spacer()
-            }
-
-            // Rest of the quiz view content
             if !viewModel.quizCompleted {
+                // 'Give Up' button at the top
+                HStack {
+                    Button("Give Up") {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                    .foregroundColor(.red)
+                    .padding()
+
+                    Spacer()
+                }
+                
                 Spacer()
                 
                 Text(viewModel.currentSubject)
@@ -72,24 +71,19 @@ struct QuizView: View {
 
                 Spacer()
             } else {
-                // When the quiz is complete, show ScoreView
-                ScoreView(score: viewModel.score, totalQuestions: viewModel.totalQuestions, restartAction: {
-                        viewModel.resetQuiz()
-                    })
+                    // When the quiz is completed, show ScoreView with 'Back to Main Menu' button
+                    ScoreView(
+                        score: viewModel.score,
+                        totalQuestions: viewModel.totalQuestions,
+                        restartAction: {
+                            viewModel.resetQuiz()
+                        },
+                        backToMainMenuAction: {
+                            presentationMode.wrappedValue.dismiss() // Navigate back to ContentView
+                        }
+                    )
+                }
             }
-//            } else {
-//                Text("Quiz Complete! Your score: \(viewModel.score)")
-//                    .padding()
-//
-//                Button("Restart Quiz") {
-//                    viewModel.resetQuiz()
-//                }
-//                .padding()
-//                .background(Color.green)
-//                .foregroundColor(Color.white)
-//                .cornerRadius(10)
-//            }
-        }
         .padding()
         .navigationBarBackButtonHidden(true)
     }

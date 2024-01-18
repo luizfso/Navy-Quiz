@@ -4,15 +4,13 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-                Spacer()
+            VStack(spacing: 10) {
 
-                // Logo Image
-                Image("NavyQuizLogo") // Ensure this image is in your Assets
+                Image("NavyQuizLogo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 100, height: 100)
-                    .padding(.bottom, 20)
+                    .frame(width: 300, height: 300)
+                    .padding(.bottom, 5)
 
                 Text("Navy Quiz")
                     .font(.largeTitle)
@@ -22,9 +20,8 @@ struct ContentView: View {
                 Text("Select your rank to start the quiz")
                     .font(.title2)
                     .foregroundColor(.accentColor)
-                    .padding(.bottom, 5)
+                    .padding()
 
-                // Buttons for different rank quizzes
                 Group {
                     NavigationLink(destination: QuizView(viewModel: QuizViewModel(questions: QuizData.e4Questions))) {
                         QuizButton(title: "The PMK-EE-E4 Quiz")
