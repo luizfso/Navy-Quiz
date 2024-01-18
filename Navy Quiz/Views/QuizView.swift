@@ -73,9 +73,9 @@ struct QuizView: View {
                 Spacer()
             } else {
                 // When the quiz is complete, show ScoreView
-                ScoreView(score: viewModel.score, totalQuestions: viewModel.currentQuestions.count) {
-                    viewModel.resetQuiz()
-                }
+                ScoreView(score: viewModel.score, totalQuestions: viewModel.totalQuestions, restartAction: {
+                        viewModel.resetQuiz()
+                    })
             }
 //            } else {
 //                Text("Quiz Complete! Your score: \(viewModel.score)")

@@ -24,6 +24,10 @@ class QuizViewModel: ObservableObject {
     func selectAnswer(_ answer: String) {
         selectedAnswer = answer
     }
+    
+    var totalQuestions: Int {
+        questions.values.flatMap { $0 }.count
+    }
 
     func goToNextQuestion() {
         if let selectedAnswer = selectedAnswer, currentQuestion.correctAnswer == selectedAnswer {
