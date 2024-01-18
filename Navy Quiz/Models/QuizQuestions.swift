@@ -71,27 +71,27 @@ struct QuizData {
     static let e5Questions: [String: [QuestionItem]] = [
         "Leadership and Character": [
             QuestionItem(questionText: "Question for E5", options: ["Autocratic", "Laissez-faire", "Democratic", "Transactional"], correctAnswer: "Democratic"),
-            QuestionItem(questionText: "What should a Navy leader do when facing an ethical dilemma?", options: ["Follow personal judgment", "Consult senior officers", "Ignore the issue", "Refer to the Navy's ethical guidelines"], correctAnswer: "Refer to the Navy's ethical guidelines"),
+            QuestionItem(questionText: "Question for E5", options: ["Follow personal judgment", "Consult senior officers", "Ignore the issue", "Refer to the Navy's ethical guidelines"], correctAnswer: "Refer to the Navy's ethical guidelines"),
             // ... additional questions for "Leadership and Character"
         ],
         "Career Information": [
-            QuestionItem(questionText: "What program provides sailors with opportunities for additional training and advanced education?", options: ["Navy College Program", "Sailor 360", "Advanced Technical Education", "Seaman to Admiral"], correctAnswer: "Navy College Program"),
-            QuestionItem(questionText: "Which document should be regularly updated to reflect a sailor's career achievements and qualifications?", options: ["Service Record", "Enlisted Evaluation", "Training Manual", "Personal Resume"], correctAnswer: "Service Record"),
+            QuestionItem(questionText: "Question for E5", options: ["Navy College Program", "Sailor 360", "Advanced Technical Education", "Seaman to Admiral"], correctAnswer: "Navy College Program"),
+            QuestionItem(questionText: "Question for E5", options: ["Service Record", "Enlisted Evaluation", "Training Manual", "Personal Resume"], correctAnswer: "Service Record"),
             // ... additional questions for "Career Information"
         ],
         "Professional Conduct": [
-            QuestionItem(questionText: "What document outlines the standards of conduct expected of all Navy personnel?", options: ["U.S. Constitution", "Code of Conduct", "Uniform Code of Military Justice", "Sailor's Creed"], correctAnswer: "Uniform Code of Military Justice"),
-            QuestionItem(questionText: "Which behavior is considered a violation of Navy's fraternization policy?", options: ["Attending professional development courses", "Participating in command sports teams", "Personal relationships between officers and enlisted members", "Discussing work-related issues"], correctAnswer: "Personal relationships between officers and enlisted members"),
+            QuestionItem(questionText: "Question for E5", options: ["U.S. Constitution", "Code of Conduct", "Uniform Code of Military Justice", "Sailor's Creed"], correctAnswer: "Uniform Code of Military Justice"),
+            QuestionItem(questionText: "Question for E5", options: ["Attending professional development courses", "Participating in command sports teams", "Personal relationships between officers and enlisted members", "Discussing work-related issues"], correctAnswer: "Personal relationships between officers and enlisted members"),
             // ... additional questions for "Professional Conduct"
         ],
         "Naval Heritage": [
-            QuestionItem(questionText: "What year was the U.S. Navy officially established?", options: ["1775", "1812", "1861", "1941"], correctAnswer: "1775"),
-            QuestionItem(questionText: "Who is known as the 'Father of the American Navy'?", options: ["John Paul Jones", "Stephen Decatur", "John F. Kennedy", "David Farragut"], correctAnswer: "John Paul Jones"),
+            QuestionItem(questionText: "Question for E5", options: ["1775", "1812", "1861", "1941"], correctAnswer: "1775"),
+            QuestionItem(questionText: "Question for E5", options: ["John Paul Jones", "Stephen Decatur", "John F. Kennedy", "David Farragut"], correctAnswer: "John Paul Jones"),
             // ... additional questions for "Naval Heritage"
         ],
         "Seamanship": [
-            QuestionItem(questionText: "What is the primary purpose of a ship's anchor?", options: ["To steer the ship", "To increase speed", "To hold the ship in place", "To detect other vessels"], correctAnswer: "To hold the ship in place"),
-            QuestionItem(questionText: "What term describes the right side of a ship when facing forward?", options: ["Port", "Starboard", "Bow", "Stern"], correctAnswer: "Starboard"),
+            QuestionItem(questionText: "Question for E5", options: ["To steer the ship", "To increase speed", "To hold the ship in place", "To detect other vessels"], correctAnswer: "To hold the ship in place"),
+            QuestionItem(questionText: "Question for E5", options: ["Port", "Starboard", "Bow", "Stern"], correctAnswer: "Starboard"),
             // ... additional questions for "Seamanship"
         ]
     ]
