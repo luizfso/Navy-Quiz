@@ -28,8 +28,9 @@ class CoreDataHelper {
         return persistentContainer.viewContext
     }
 
-    func fetchQuestions() -> [Question] {
-        let fetchRequest: NSFetchRequest<Question> = Question.fetchRequest()
+    // Fetch all QuizQuestion entities
+    func fetchQuestions() -> [QuizQuestion] {
+        let fetchRequest: NSFetchRequest<QuizQuestion> = QuizQuestion.fetchRequest()
         do {
             return try context.fetch(fetchRequest)
         } catch {
@@ -38,6 +39,7 @@ class CoreDataHelper {
         }
     }
 
+    // Save changes in the context
     func saveContext() {
         if context.hasChanges {
             do {
