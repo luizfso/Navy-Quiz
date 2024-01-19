@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		C8B405DE2B590764009AEE1F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B405DD2B590764009AEE1F /* InfoView.swift */; };
+		C8B405E12B59EE27009AEE1F /* AppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8B405DF2B59EE27009AEE1F /* AppModel.xcdatamodeld */; };
+		C8B405E72B59EF20009AEE1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B405E62B59EF20009AEE1F /* AppDelegate.swift */; };
+		C8B405E92B59EF30009AEE1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B405E82B59EF30009AEE1F /* SceneDelegate.swift */; };
+		C8B405EC2B59EF7C009AEE1F /* Question+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B405EB2B59EF7C009AEE1F /* Question+CoreDataClass.swift */; };
+		C8B405EE2B59F056009AEE1F /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B405ED2B59F056009AEE1F /* CoreDataHelper.swift */; };
+		C8B405F02B59F193009AEE1F /* InitialQuestions.json in Resources */ = {isa = PBXBuildFile; fileRef = C8B405EF2B59F193009AEE1F /* InitialQuestions.json */; };
+		C8B405F22B59F1A7009AEE1F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B405F12B59F1A7009AEE1F /* APIService.swift */; };
+		C8B405F42B59F1B5009AEE1F /* PushNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B405F32B59F1B5009AEE1F /* PushNotificationService.swift */; };
+		C8B405F62B59F1C8009AEE1F /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B405F52B59F1C8009AEE1F /* PersistentContainer.swift */; };
 		C8BD0FFC2B57457400CAFC27 /* Navy_QuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFB2B57457400CAFC27 /* Navy_QuizApp.swift */; };
 		C8BD0FFE2B57457400CAFC27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFD2B57457400CAFC27 /* ContentView.swift */; };
 		C8BD10002B57457400CAFC27 /* QuestionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD0FFF2B57457400CAFC27 /* QuestionItem.swift */; };
@@ -41,6 +50,15 @@
 
 /* Begin PBXFileReference section */
 		C8B405DD2B590764009AEE1F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		C8B405E02B59EE27009AEE1F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C8B405E62B59EF20009AEE1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C8B405E82B59EF30009AEE1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C8B405EB2B59EF7C009AEE1F /* Question+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C8B405ED2B59F056009AEE1F /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		C8B405EF2B59F193009AEE1F /* InitialQuestions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InitialQuestions.json; sourceTree = "<group>"; };
+		C8B405F12B59F1A7009AEE1F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C8B405F32B59F1B5009AEE1F /* PushNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationService.swift; sourceTree = "<group>"; };
+		C8B405F52B59F1C8009AEE1F /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
 		C8BD0FF82B57457400CAFC27 /* Navy Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navy Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BD0FFB2B57457400CAFC27 /* Navy_QuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navy_QuizApp.swift; sourceTree = "<group>"; };
 		C8BD0FFD2B57457400CAFC27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +103,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8B405E22B59EEE5009AEE1F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C8B405ED2B59F056009AEE1F /* CoreDataHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C8B405E32B59EEEE009AEE1F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C8BD10012B57457500CAFC27 /* Assets.xcassets */,
+				C8B405EF2B59F193009AEE1F /* InitialQuestions.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C8B405E42B59EEF6009AEE1F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C8B405F12B59F1A7009AEE1F /* APIService.swift */,
+				C8B405F32B59F1B5009AEE1F /* PushNotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C8B405E52B59EF00009AEE1F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C8B405DF2B59EE27009AEE1F /* AppModel.xcdatamodeld */,
+				C8B405F52B59F1C8009AEE1F /* PersistentContainer.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C8B405EA2B59EF67009AEE1F /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				C8B405EB2B59EF7C009AEE1F /* Question+CoreDataClass.swift */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
 		C8BD0FEF2B57457400CAFC27 = {
 			isa = PBXGroup;
 			children = (
@@ -112,10 +173,15 @@
 				C8BD102D2B57506200CAFC27 /* Models */,
 				C8BD102E2B57507E00CAFC27 /* Views */,
 				C8BD102F2B57509400CAFC27 /* ViewModels */,
-				C8BD10012B57457500CAFC27 /* Assets.xcassets */,
-				C8BD10032B57457500CAFC27 /* Navy_Quiz.entitlements */,
-				C8BD10072B57457500CAFC27 /* Info.plist */,
+				C8B405E22B59EEE5009AEE1F /* Helpers */,
+				C8B405E32B59EEEE009AEE1F /* Resources */,
+				C8B405E42B59EEF6009AEE1F /* Services */,
+				C8B405E52B59EF00009AEE1F /* CoreData */,
 				C8BD10042B57457500CAFC27 /* Preview Content */,
+				C8B405E62B59EF20009AEE1F /* AppDelegate.swift */,
+				C8B405E82B59EF30009AEE1F /* SceneDelegate.swift */,
+				C8BD10072B57457500CAFC27 /* Info.plist */,
+				C8BD10032B57457500CAFC27 /* Navy_Quiz.entitlements */,
 			);
 			path = "Navy Quiz";
 			sourceTree = "<group>";
@@ -149,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				C8BD0FFF2B57457400CAFC27 /* QuestionItem.swift */,
+				C8B405EA2B59EF67009AEE1F /* CoreDataModels */,
 				C8BD10322B5756B400CAFC27 /* QuizQuestions.swift */,
 			);
 			path = Models;
@@ -279,6 +346,7 @@
 			files = (
 				C8BD10062B57457500CAFC27 /* Preview Assets.xcassets in Resources */,
 				C8BD10022B57457500CAFC27 /* Assets.xcassets in Resources */,
+				C8B405F02B59F193009AEE1F /* InitialQuestions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,9 +376,17 @@
 				C8BD102A2B574F8C00CAFC27 /* QuizView.swift in Sources */,
 				C8BD10332B5756B400CAFC27 /* QuizQuestions.swift in Sources */,
 				C8BD10002B57457400CAFC27 /* QuestionItem.swift in Sources */,
+				C8B405E12B59EE27009AEE1F /* AppModel.xcdatamodeld in Sources */,
+				C8B405F42B59F1B5009AEE1F /* PushNotificationService.swift in Sources */,
 				C8BD102C2B574FE600CAFC27 /* QuizViewModel.swift in Sources */,
+				C8B405F62B59F1C8009AEE1F /* PersistentContainer.swift in Sources */,
+				C8B405E92B59EF30009AEE1F /* SceneDelegate.swift in Sources */,
+				C8B405F22B59F1A7009AEE1F /* APIService.swift in Sources */,
+				C8B405EE2B59F056009AEE1F /* CoreDataHelper.swift in Sources */,
 				C8BD0FFC2B57457400CAFC27 /* Navy_QuizApp.swift in Sources */,
+				C8B405E72B59EF20009AEE1F /* AppDelegate.swift in Sources */,
 				C8BD10312B5754BE00CAFC27 /* ScoreView.swift in Sources */,
+				C8B405EC2B59EF7C009AEE1F /* Question+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +745,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C8B405DF2B59EE27009AEE1F /* AppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C8B405E02B59EE27009AEE1F /* Model.xcdatamodel */,
+			);
+			currentVersion = C8B405E02B59EE27009AEE1F /* Model.xcdatamodel */;
+			path = AppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C8BD0FF02B57457400CAFC27 /* Project object */;
 }

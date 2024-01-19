@@ -4,6 +4,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme  // This will hold the current color scheme (light or dark)
     
     var body: some View {
         NavigationView {
@@ -19,11 +20,20 @@ struct ContentView: View {
                         .padding([.top, .trailing])  // Padding to ensure it's easily tappable
                     }
 
-                Image("NavyQuizLogo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300, height: 300)
-                    .padding(.bottom, 5)
+                // Image selection based on color scheme
+               if colorScheme == .dark {
+                   Image("NavyQuizLogoWhite")  // Use the white logo for dark mode
+                       .resizable()
+                       .scaledToFit()
+                       .frame(width: 300, height: 300)
+                       .padding(.bottom, 5)
+               } else {
+                   Image("NavyQuizLogo")  // Use the regular logo for light mode
+                       .resizable()
+                       .scaledToFit()
+                       .frame(width: 300, height: 300)
+                       .padding(.bottom, 5)
+               }
 
                 Text("Navy Quiz")
                     .font(.largeTitle)

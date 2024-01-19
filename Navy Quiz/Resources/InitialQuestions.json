@@ -1,0 +1,19 @@
+{
+    "e4Questions": [
+        {
+            "category": "Leadership and Character",
+            "questions": [
+                {
+                    "questionText": "Which leadership style is characterized by actively involving team members in decision-making processes?",
+                    "options": [
+                        "Autocratic",
+                        "Laissez-faire",
+                        "Democratic",
+                        "Transactional"
+                    ],
+                    "correctAnswer": "Democratic"
+                }
+            ]
+        }
+    ]
+}
