@@ -7,42 +7,39 @@
 
 import Foundation
 
+// Decodable struct for parsing JSON data
+struct QuizQuestionDTO: Decodable {
+    let id: UUID
+    let questionText: String
+    let correctAnswer: String
+    let options: [String]
+    // ... Add other properties that match your JSON structure
+}
+
 class APIService {
-
     static let shared = APIService()
-
     private init() {}
 
-    // Base URL of your API
     let baseURL = URL(string: "https://your-api-url.com")!
 
-    // Fetch updated questions from the server
-    func fetchUpdatedQuestions(since date: Date, completion: @escaping ([QuizQuestion]?, Error?) -> Void) {
-        // Construct the URL for the request
+    func fetchUpdatedQuestions(completion: @escaping (Result<[QuizQuestionDTO], Error>) -> Void) {
         let endpoint = baseURL.appendingPathComponent("/questions/updates")
         var request = URLRequest(url: endpoint)
         request.httpMethod = "GET"
 
-        // Add date to the request header or parameters as needed
-        let dateFormatter = ISO8601DateFormatter()
-        request.addValue(dateFormatter.string(from: date), forHTTPHeaderField: "Last-Updated")
-
-        // Perform the network request
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
-                completion(nil, error)
+                completion(.failure(error ?? NSError()))
                 return
             }
 
             do {
-                // Parse the JSON data
-                let updatedQuestions = try JSONDecoder().decode([QuizQuestion].self, from: data)
-                completion(updatedQuestions, nil)
+                let decoder = JSONDecoder()
+                let questions = try decoder.decode([QuizQuestionDTO].self, from: data)
+                completion(.success(questions))
             } catch {
-                completion(nil, error)
+                completion(.failure(error))
             }
         }.resume()
     }
-
-    // Additional API methods as needed
 }

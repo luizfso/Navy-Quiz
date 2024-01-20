@@ -6,40 +6,25 @@
 //
 
 import CoreData
-import UIKit
 
 class CoreDataHelper {
-
     static let shared = CoreDataHelper()
-
-    let persistentContainer: NSPersistentContainer
-
-    private init() {
-        // Assuming your Core Data model file is named 'AppModel.xcdatamodeld'
-        persistentContainer = NSPersistentContainer(name: "AppModel")
-        persistentContainer.loadPersistentStores { (storeDescription, error) in
-            if let error = error as NSError? {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        }
-    }
+    private init() {}
 
     var context: NSManagedObjectContext {
         return persistentContainer.viewContext
     }
 
-    // Fetch all QuizQuestion entities
-    func fetchQuestions() -> [QuizQuestion] {
-        let fetchRequest: NSFetchRequest<QuizQuestion> = QuizQuestion.fetchRequest()
-        do {
-            return try context.fetch(fetchRequest)
-        } catch {
-            print("Fetch error: \(error)")
-            return []
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "AppModel")
+        container.loadPersistentStores { _, error in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
         }
-    }
+        return container
+    }()
 
-    // Save changes in the context
     func saveContext() {
         if context.hasChanges {
             do {
@@ -50,7 +35,5 @@ class CoreDataHelper {
             }
         }
     }
-    
-    // Add more helper functions as needed for adding, updating, deleting questions
 }
 

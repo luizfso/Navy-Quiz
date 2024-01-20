@@ -8,11 +8,5 @@ struct QuestionItem: Identifiable {
     let questionText: String
     let options: [String]
     let correctAnswer: String
-    
-    init(id: UUID = UUID(), questionText: String, options: [String], correctAnswer: String) {
-        self.id = id
-        self.questionText = questionText
-        self.options = options
-        self.correctAnswer = correctAnswer
-    }
+    // Include any additional properties needed for your quiz logic
 }
