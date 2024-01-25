@@ -4,6 +4,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme  // Detects the current color scheme
     
     var body: some View {
         NavigationView {
@@ -12,27 +13,33 @@ struct ContentView: View {
                     Spacer()  // Pushes the button to the right
 
                     NavigationLink(destination: InfoView()) {
-                            Image(systemName: "info.circle")  // System info icon
-                                .font(.title2)
-                                .foregroundColor(Color("AccentColor"))  // Updated to use custom accent color
-                        }
-                        .padding([.top, .trailing])  // Padding to ensure it's easily tappable
+                        Image(systemName: "info.circle")  // System info icon
+                            .font(.title2)
+                            .foregroundColor(Color("AccentColor"))  // Use custom accent color
                     }
+                    .padding([.top, .trailing])  // Padding to ensure it's easily tappable
+                }
 
-                Image("NavyQuizLogo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300, height: 300)
-                    .padding(.bottom, 5)
+                if colorScheme == .dark {
+                   Image("NavyQuizLogoWhite")  // Use the white logo for dark mode
+                       .resizable()
+                       .scaledToFit()
+                       .frame(width: 300, height: 300)
+               } else {
+                   Image("NavyQuizLogo")  // Use the regular logo for light mode
+                       .resizable()
+                       .scaledToFit()
+                       .frame(width: 300, height: 300)
+               }
 
                 Text("Navy Quiz")
                     .font(.largeTitle)
-                    .foregroundColor(Color("TextPrimary"))  // Updated to use TextPrimary color
+                    .foregroundColor(Color("TextPrimary"))  // Use TextPrimary color
                     .padding()
 
                 Text("Select your rank to start the quiz")
                     .font(.title2)
-                    .foregroundColor(Color("TextSecondary"))  // Updated to use TextSecondary color
+                    .foregroundColor(Color("TextSecondary"))  // Use TextSecondary color
                     .padding()
 
                 Group {
@@ -55,7 +62,7 @@ struct ContentView: View {
 
                 Spacer()
             }
-            .background(Color("BackgroundPrimary"))  // Updated to use BackgroundPrimary color
+            .background(Color("BackgroundPrimary"))  // Use BackgroundPrimary color
             .navigationBarHidden(true)
         }
     }
